@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block titulo %}Produtos{% endblock %}
+{% block conteudo %}
+    <h2>{{produto['nome']}}</h2>
+    <p>Categoria: {{produto['categoria']}}</p>
+    <p>Preço: R$ {{produto['preco']}} por {{produto['unidade']}}</p>
+    <a href='/'>Voltar para a quitanda</a>
+{% endblock %}
